@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian - Portafolio de Ingeniería en Informática</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para transiciones suaves de color */
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #121212 !important;
+            color: #f8f9fa !important;
+        }
+        .dark-mode .card {
+            background-color: #1e1e1e !important;
+            color: #f8f9fa !important;
+            border-color: #333;
+        }
+        .dark-mode .navbar {
+            background-color: #1f1f1f !important;
+        }
+        .dark-mode .bg-light {
+            background-color: #1e1e1e !important;
+        }
+        section {
+            padding: 80px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio"><i class="bi bi-cpu"></i> Sebastian</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-outline-warning btn-sm" id="btn-dark-mode">
+                            <i class="bi bi-moon-fill"></i> Modo Oscuro
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="bg-dark text-white text-center text-lg-start py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold">Hola, soy Sebastian</h1>
+                    <p class="lead">Estudiante de Ingeniería en Informática enfocado en Inteligencia Artificial y Hardware.</p>
+                    <a href="#proyectos" class="btn btn-primary btn-lg me-2">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-outline-light btn-lg">Contacto</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" alt="Programación" class="img-fluid rounded-circle shadow" style="width: 320px; height: 320px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+                    <i class="bi bi-person-workspace text-primary" style="font-size: 8rem;"></i>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="fw-bold mb-3">Sobre mí</h2>
+                    <p>Actualmente me desempeño en soporte de TI y tareas de back-office en Fibracol EAS. En paralelo, mi formación académica me impulsa a estudiar la relación entre el software optimizado y las nuevas arquitecturas de hardware.</p>
+                    <p>Mi meta principal es profundizar en el campo de la Inteligencia Artificial mediante el desarrollo nativo, buscando siempre soluciones eficientes que aprovechen al máximo las capacidades técnicas de los procesadores actuales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Habilidades Técnicas</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded shadow-sm bg-light">
+                        <i class="bi bi-filetype-py text-warning display-4 mb-3"></i>
+                        <h5>Python</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded shadow-sm bg-light">
+                        <i class="bi bi-cpu text-info display-4 mb-3"></i>
+                        <h5>Hardware</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded shadow-sm bg-light">
+                        <i class="bi bi-git text-danger display-4 mb-3"></i>
+                        <h5>Git & GitHub</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded shadow-sm bg-light">
+                        <i class="bi bi-bootstrap-fill text-purple display-4 mb-3" style="color: #7952b3;"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Proyectos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Proyecto IA">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">IA Nativa en Python</h5>
+                            <p class="card-text">Proyecto de desarrollo de un modelo de inteligencia artificial básico programado de manera nativa en Python, diseñado para comprender el flujo de procesamiento de algoritmos de Machine Learning a bajo nivel.</p>
+                            <div class="mt-auto">
+                                <a href="https://github.com/Keyrelic_dev" target="_blank" class="btn btn-primary w-100">Ver Código <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form id="contactForm" class="shadow p-4 rounded bg-light">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@correo.com">
+                            <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            <div class="invalid-feedback">Por favor, escribe un mensaje.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Juan Sebastian Da Silva Arrua. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // --- FUNCIONALIDAD 1: Modo Claro / Oscuro ---
+        const btnDarkMode = document.getElementById('btn-dark-mode');
+        btnDarkMode.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            // Cambiar dinámicamente el texto e icono del botón
+            if(document.body.classList.contains('dark-mode')) {
+                btnDarkMode.innerHTML = '<i class="bi bi-sun-fill"></i> Modo Claro';
+                btnDarkMode.classList.replace('btn-outline-warning', 'btn-warning');
+            } else {
+                btnDarkMode.innerHTML = '<i class="bi bi-moon-fill"></i> Modo Oscuro';
+                btnDarkMode.classList.replace('btn-warning', 'btn-outline-warning');
+            }
+        });
+
+        // --- FUNCIONALIDAD 2: Validación del Formulario de Contacto ---
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío por defecto para validar
+            
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+
+            // Validar Nombre
+            if (name.value.trim() === "") {
+                name.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                name.classList.remove('is-invalid');
+                name.classList.add('is-valid');
+            }
+
+            // Validar Email (Expresión Regular simple)
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value.trim())) {
+                email.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                email.classList.remove('is-invalid');
+                email.classList.add('is-valid');
+            }
+
+            // Validar Mensaje
+            if (message.value.trim() === "") {
+                message.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                message.classList.remove('is-invalid');
+                message.classList.add('is-valid');
+            }
+
+            // Si todo está correcto, simular envío
+            if (isValid) {
+                alert(`¡Gracias por tu mensaje, ${name.value}! Nos pondremos en contacto pronto.`);
+                contactForm.reset(); // Reiniciar campos
+                
+                // Quitar clases de validación
+                name.classList.remove('is-valid');
+                email.classList.remove('is-valid');
+                message.classList.remove('is-valid');
+            }
+        });
+    </script>
+</body>
+</html>
