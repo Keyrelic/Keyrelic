@@ -107,24 +107,111 @@
                     <div class="p-4 border rounded shadow-sm bg-light">
                         <i class="bi bi-git text-danger display-4 mb-3"></i>
                         <h5>Git & GitHub</h5>
+          <!-- 5. PROYECTOS -->
+    <section id="proyectos" class="bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Proyectos Destacados</h2>
+            <div class="row justify-content-center">
+                
+                <!-- Tarjeta del Proyecto: Calculadora Web -->
+                <div class="col-lg-10">
+                    <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+                        <div class="row g-0">
+                            <!-- Lado Izquierdo: Información del Proyecto -->
+                            <div class="col-md-6 p-4 d-flex flex-column justify-content-between bg-white">
+                                <div>
+                                    <h4 class="fw-bold text-dark mb-3"><i class="bi bi-calculator text-primary"></i> Calculadora Web Interactiva</h4>
+                                    <p class="text-muted">Aplicación web funcional desarrollada como proyecto práctico de la materia. Permite realizar operaciones matemáticas básicas en tiempo real utilizando una interfaz limpia y adaptativa.</p>
+                                    
+                                    <h6 class="fw-bold text-dark mt-4">Tecnologías Aplicadas:</h6>
+                                    <div class="mb-3">
+                                        <span class="badge bg-danger">HTML5</span>
+                                        <span class="badge bg-purple" style="background-color: #7952b3;">Bootstrap 5</span>
+                                        <span class="badge bg-warning text-dark">JavaScript (DOM & Eval)</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <a href="https://github.com/Keyrelic/Keyrelic" target="_blank" class="btn btn-dark w-100 mb-2">
+                                        <i class="bi bi-github"></i> Ver Código en Repositorio
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Lado Derecho: La Calculadora Real Ejecutándose en Vivo -->
+                            <div class="col-md-6 p-4 d-flex align-items-center justify-content-center" style="background-color: #1e1e24;">
+                                
+                                <!-- Estructura interna de tu Calculadora original -->
+                                <div class="card bg-dark text-white p-3 shadow-lg border-0" style="width: 100%; max-width: 280px; border-radius: 15px;">
+                                    <div class="mb-3">
+                                        <input type="text" id="calc-pantalla" class="form-control form-control-lg text-end bg-secondary text-white border-0 fw-bold" value="0" readonly style="font-size: 1.5rem; height: 50px;">
+                                    </div>
+
+                                    <div class="row g-2">
+                                        <div class="col-3"><button onclick="calcPresionar('(')" class="btn btn-secondary btn-sm w-100 fw-bold py-2">(</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar(')')" class="btn btn-secondary btn-sm w-100 fw-bold py-2">)</button></div>
+                                        <div class="col-3"><button onclick="calcLimpiar()" class="btn btn-danger btn-sm w-100 fw-bold py-2">C</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('/')" class="btn btn-warning text-white btn-sm w-100 fw-bold py-2">/</button></div>
+                                    </div>
+                                    <div class="row g-2 mt-1">
+                                        <div class="col-3"><button onclick="calcPresionar('7')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">7</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('8')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">8</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('9')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">9</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('*')" class="btn btn-warning text-white btn-sm w-100 fw-bold py-2">*</button></div>
+                                    </div>
+                                    <div class="row g-2 mt-1">
+                                        <div class="col-3"><button onclick="calcPresionar('4')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">4</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('5')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">5</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('6')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">6</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('-')" class="btn btn-warning text-white btn-sm w-100 fw-bold py-2">-</button></div>
+                                    </div>
+                                    <div class="row g-2 mt-1">
+                                        <div class="col-3"><button onclick="calcPresionar('1')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">1</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('2')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">2</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('3')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">3</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('+')" class="btn btn-warning text-white btn-sm w-100 fw-bold py-2">+</button></div>
+                                    </div>
+                                    <div class="row g-2 mt-1">
+                                        <div class="col-6"><button onclick="calcPresionar('0')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">0</button></div>
+                                        <div class="col-3"><button onclick="calcPresionar('.')" class="btn btn-outline-light btn-sm w-100 fw-bold py-2">.</button></div>
+                                        <div class="col-3"><button onclick="calcCalcular()" class="btn btn-success btn-sm w-100 fw-bold py-2">=</button></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="p-4 border rounded shadow-sm bg-light">
-                        <i class="bi bi-bootstrap-fill text-purple display-4 mb-3" style="color: #7952b3;"></i>
-                        <h5>Bootstrap</h5>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="proyectos" class="bg-light">
-        <div class="container">
-            <h2 class="fw-bold text-center mb-5">Proyectos</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <div class="card h-100 shadow-sm">
+    <!-- Script de control para la calculadora integrada -->
+    <script>
+        const calcPantalla = document.getElementById('calc-pantalla');
+
+        function calcPresionar(valor) {
+            if (calcPantalla.value === '0' || calcPantalla.value === 'Error') {
+                calcPantalla.value = valor;
+            } else {
+                calcPantalla.value += valor;
+            }
+        }
+
+        function calcLimpiar() {
+            calcPantalla.value = '0';
+        }
+
+        function calcCalcular() {
+            try {
+                // Ejecuta la operación de forma segura dentro del contexto de la app
+                calcPantalla.value = eval(calcPantalla.value);
+            } catch (error) {
+                calcPantalla.value = 'Error';
+            }
+        }
+    </script>
                         <img src="https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Proyecto IA">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">IA Nativa en Python</h5>
