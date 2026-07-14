@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <style>
-        /* Estilos personalizados para transiciones suaves de color */
+       
         body {
             transition: background-color 0.3s, color 0.3s;
         }
@@ -176,12 +176,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // --- FUNCIONALIDAD 1: Modo Claro / Oscuro ---
+      
         const btnDarkMode = document.getElementById('btn-dark-mode');
         btnDarkMode.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
             
-            // Cambiar dinámicamente el texto e icono del botón
+         
             if(document.body.classList.contains('dark-mode')) {
                 btnDarkMode.innerHTML = '<i class="bi bi-sun-fill"></i> Modo Claro';
                 btnDarkMode.classList.replace('btn-outline-warning', 'btn-warning');
@@ -191,17 +191,15 @@
             }
         });
 
-        // --- FUNCIONALIDAD 2: Validación del Formulario de Contacto ---
         const contactForm = document.getElementById('contactForm');
         contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita el envío por defecto para validar
+            event.preventDefault(); 
             
             let isValid = true;
             const name = document.getElementById('name');
             const email = document.getElementById('email');
             const message = document.getElementById('message');
 
-            // Validar Nombre
             if (name.value.trim() === "") {
                 name.classList.add('is-invalid');
                 isValid = false;
@@ -210,7 +208,7 @@
                 name.classList.add('is-valid');
             }
 
-            // Validar Email (Expresión Regular simple)
+          
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email.value.trim())) {
                 email.classList.add('is-invalid');
@@ -220,7 +218,6 @@
                 email.classList.add('is-valid');
             }
 
-            // Validar Mensaje
             if (message.value.trim() === "") {
                 message.classList.add('is-invalid');
                 isValid = false;
@@ -229,12 +226,12 @@
                 message.classList.add('is-valid');
             }
 
-            // Si todo está correcto, simular envío
+           
             if (isValid) {
                 alert(`¡Gracias por tu mensaje, ${name.value}! Nos pondremos en contacto pronto.`);
-                contactForm.reset(); // Reiniciar campos
+                contactForm.reset(); 
                 
-                // Quitar clases de validación
+               
                 name.classList.remove('is-valid');
                 email.classList.remove('is-valid');
                 message.classList.remove('is-valid');
